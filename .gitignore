@@ -1,1 +1,5 @@
 .venv
+notebook/
+.artifacts
+pycache/
+__pycache__/

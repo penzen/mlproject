@@ -4,8 +4,11 @@ matplotlib
 mlflow
 scikit-learn
 keras
+seaborn
 tensorflow
 hyperopt
 DVC
+catboost
+xgboost
 
 -e . 
