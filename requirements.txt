@@ -6,6 +6,7 @@ mlflow
 scikit-learn
 keras
 seaborn
+Flask
 tensorflow
 hyperopt
 DVC
