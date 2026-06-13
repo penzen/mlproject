@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance ML App</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #111827, #1e3a8a, #2563eb);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            color: white;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 60px 40px;
+            border-radius: 28px;
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(12px);
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.18);
+            margin-bottom: 22px;
+            font-size: 14px;
+            letter-spacing: 0.4px;
+        }
+
+        h1 {
+            font-size: 46px;
+            line-height: 1.15;
+            margin-bottom: 18px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+            max-width: 700px;
+            margin: 0 auto 34px auto;
+            color: #e5e7eb;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin: 35px 0;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 22px;
+            border-radius: 18px;
+            text-align: left;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .card span {
+            color: #dbeafe;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            text-decoration: none;
+            background: white;
+            color: #1e3a8a;
+            padding: 15px 28px;
+            border-radius: 14px;
+            font-size: 17px;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(255, 255, 255, 0.25);
+        }
+
+        .footer {
+            margin-top: 28px;
+            font-size: 13px;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 760px) {
+            h1 {
+                font-size: 34px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 40px 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="badge">Machine Learning Regression App</div>
+
+        <h1>Student Performance Prediction</h1>
+
+        <p>
+            This app predicts a student's expected math score using demographic,
+            academic, and test preparation information. The prediction is powered
+            by a trained machine learning model and a saved preprocessing pipeline.
+        </p>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Input Data</h3>
+                <span>Gender, ethnicity group, parental education, lunch type, test preparation, reading score, and writing score.</span>
+            </div>
+
+            <div class="card">
+                <h3>Preprocessing</h3>
+                <span>The app uses the saved preprocessor.pkl file to encode and scale new user input.</span>
+            </div>
+
+            <div class="card">
+                <h3>Prediction</h3>
+                <span>The trained model.pkl file predicts the final math score from the processed input.</span>
+            </div>
+        </div>
+
+        <a class="btn" href="{{ url_for('predict_datapoint') }}">
+            Start Prediction
+        </a>
+
+        <div class="footer">
+            End-to-End ML Project · Flask · Scikit-learn · MLOps Practice
+        </div>
+    </div>
+</body>
+</html>

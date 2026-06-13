@@ -11,4 +11,5 @@ DVC
 catboost
 xgboost
 dill
+optuna
 -e . 
