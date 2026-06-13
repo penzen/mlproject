@@ -1,0 +1,7 @@
+[ 2026-06-13 15:54:27,702 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-06-13 15:54:27,722 ] 97 werkzeug - INFO -  * Debugger PIN: 123-345-136
+[ 2026-06-13 15:54:41,711 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2026 15:54:41] "[33mGET /index HTTP/1.1[0m" 404 -
+[ 2026-06-13 15:54:41,834 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2026 15:54:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2026-06-13 15:55:00,767 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2026 15:55:00] "GET / HTTP/1.1" 200 -
+[ 2026-06-13 15:55:35,762 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2026 15:55:35] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-06-13 15:56:22,314 ] 97 werkzeug - INFO - 127.0.0.1 - - [13/Jun/2026 15:56:22] "POST /predictdata HTTP/1.1" 200 -

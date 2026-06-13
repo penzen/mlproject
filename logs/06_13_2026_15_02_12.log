@@ -1,0 +1,14 @@
+[ 2026-06-13 15:02:34,909 ] 33 root - INFO - Entered the data ingestion method 
+[ 2026-06-13 15:02:34,925 ] 36 root - INFO - Read the dataset as dataframe
+[ 2026-06-13 15:02:34,931 ] 42 root - INFO - Train test split initiated
+[ 2026-06-13 15:02:34,936 ] 48 root - INFO - Ingestion of the data is completed
+[ 2026-06-13 15:02:34,936 ] 87 root - INFO - Data transformation method starts
+[ 2026-06-13 15:02:35,010 ] 92 root - INFO - Reading of the train and test data is completed
+[ 2026-06-13 15:02:35,010 ] 96 root - INFO - Obtaining preprocessor object
+[ 2026-06-13 15:02:35,010 ] 60 root - INFO - Numerical columns preprocessing completed
+[ 2026-06-13 15:02:35,011 ] 67 root - INFO - Categorical columns encoding completed
+[ 2026-06-13 15:02:35,011 ] 76 root - INFO - Preprocessor object created
+[ 2026-06-13 15:02:35,012 ] 109 root - INFO - Applying preprocessor object on training and testing dataframe
+[ 2026-06-13 15:02:35,067 ] 122 root - INFO - Data transformation is completed
+[ 2026-06-13 15:02:35,068 ] 40 root - INFO - Splitting training and test input data
+[ 2026-06-13 15:02:40,798 ] 63 root - INFO - Best found model on both training and testing dataset is Ridge Regression with r2 score: 0.8805917946912827
