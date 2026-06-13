@@ -1,5 +1,6 @@
 .venv
 notebook/
-.artifacts
+artifacts/
+logs/
 pycache/
 __pycache__/
