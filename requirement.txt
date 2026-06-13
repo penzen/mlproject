@@ -10,5 +10,5 @@ hyperopt
 DVC
 catboost
 xgboost
-
+dill
 -e . 
