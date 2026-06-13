@@ -1,17 +1,9 @@
+Flask
+gunicorn
 numpy
 pandas
-matplotlib
-gunicorn
-mlflow
 scikit-learn
-keras
-seaborn
-Flask
-tensorflow
-hyperopt
-DVC
+dill
 catboost
 xgboost
-dill
-optuna
 -e . 
