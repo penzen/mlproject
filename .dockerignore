@@ -1,0 +1,9 @@
+.venv
+__pycache__
+.git
+.github
+*.pyc
+logs
+catboost_info
+notebook
+.env
