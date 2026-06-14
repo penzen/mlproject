@@ -1,10 +1,37 @@
-# creating a genratic ML project 
+## End to End MAchine Learning Project
 
-1. Componets folder
-This will includes all the modules we will use in the project, a modeules has something that the project means data_ingestion, data_validation, data transformation,model_trainer etc
+1. Docker Build checked
+2. Github Workflow
+3. Iam User In AWS
 
-2. Pipeline
-We will have training pipeline and prediction pipeline
+## Docker Setup In EC2 commands to be Executed
 
-3. utils 
-anyu funtionalily used for genral purpose we can use it here, where we will be using it for the rest of the project
+#optinal
+
+sudo apt-get update -y
+
+sudo apt-get upgrade
+
+#required
+
+curl -fsSL https://get.docker.com -o get-docker.sh
+
+sudo sh get-docker.sh
+
+sudo usermod -aG docker ubuntu
+
+newgrp docker
+
+## Configure EC2 as self-hosted runner:
+
+## Setup github secrets:
+
+AWS_ACCESS_KEY_ID=
+
+AWS_SECRET_ACCESS_KEY=
+
+AWS_REGION = us-east-1
+
+AWS_ECR_LOGIN_URI = demo>>  566373416292.dkr.ecr.ap-south-1.amazonaws.com
+
+ECR_REPOSITORY_NAME = simple-app
